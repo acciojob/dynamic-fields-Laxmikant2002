@@ -1,1 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.field-group {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-weight: 500;
+  color: #555;
+}
+
+input {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+  width: 100%;
+}
+
+.remove-btn:hover {
+  background-color: #da190b;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+}
+
+.button-group button:first-child {
+  background-color: #2196F3;
+  color: white;
+}
+
+.button-group button:first-child:hover {
+  background-color: #0b7dda;
+}
+
+.button-group button:last-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-group button:last-child:hover {
+  background-color: #45a049;
+}
