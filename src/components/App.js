@@ -24,19 +24,20 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data:", fields.map(({ name, age }) => ({ name, age })));
+    const formData = fields.map(({ name, age }) => ({ name, age }));
+    console.log(formData);
   };
 
   return (
-    <div>
+    <div id="main">
       <form onSubmit={handleSubmit}>
         <h2>Dynamic Fields Form</h2>
 
         {fields.map((field) => (
           <div key={field.id} className='field-group'>
             <div className='input-group'>
-              <label>
-                Name:
+              <div>
+                <label>Name:</label>
                 <input
                   type="text"
                   name="name"
@@ -44,18 +45,18 @@ const App = () => {
                   onChange={(e) => handleInputChange(field.id, "name", e.target.value)}
                   placeholder='Enter name'
                 />
-              </label>
+              </div>
 
-              <label>
-                Age:
+              <div>
+                <label>Age:</label>
                 <input
-                type='number'
-                name='age'
-                value={field.age}
-                onChange={(e) => handleInputChange(field.id, "age", e.target.value)}
-                placeholder='Enter age'
+                  type="number"
+                  name="age"
+                  value={field.age}
+                  onChange={(e) => handleInputChange(field.id, "age", e.target.value)}
+                  placeholder='Enter age'
                 />
-              </label>
+              </div>
             </div>
 
             {fields.length > 1 && (

@@ -39,12 +39,16 @@ h2 {
   margin-bottom: 10px;
 }
 
-label {
+.input-group > div {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+label {
   font-weight: 500;
   color: #555;
+  margin-bottom: 5px;
 }
 
 input {
